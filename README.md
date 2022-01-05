@@ -1,20 +1,21 @@
 # checknames
 ### Software required: python 3 and biopython
 
-## If you simply want to check if tip labels in your phylogeny match the taxa in your fasta alignment:
+## Check if tip labels in your phylogeny match the taxa in your fasta alignment:
+### phylogeny format: newick, nexus, nexml, phyloxml, or cdao
 
-<pre><code> python matchfasta2tree.py -f <yourfastaalignmet> -p <yourtreefile> -t <phylogeny format: newick, nexus, nexml, phyloxml, or cdao> </code></pre>
+<pre><code> python matchfasta2tree.py -f example.fasta -p example.tree -t newick </code></pre>
 
-## If you want to prune the alignment for taxa that are not in your phylogeny:
+## Prune the alignment of taxa that are **NOT** in your phylogeny:
 
-python matchfasta2tree.py -f <yourfastaalignmet> -p <yourtreefile> -t <phylogeny format: newick, nexus, nexml, phyloxml, or cdao> -r True -g <outputalignment>
+<pre><code> python matchfasta2tree.py -f example.fasta -p example.tree -t newick -r True -g out.fasta  </code></pre>
 
-## If you want to prune the phylogeny for taxa that are not in your alignment:
+## Prune the phylogeny for taxa that are **NOT** in your alignment:
 
-python matchfasta2tree.py -f <yourfastaalignmet> -p <yourtreefile> -t <phylogeny format: newick, nexus, nexml, phyloxml, or cdao> -u True -ot <outputtreefile>
+<pre><code> python matchfasta2tree.py -f example.fasta -p example.tree -t newick-u True -ot out.tree  </code></pre>
 
-## If you want to prune both phylogeny alignment:
+## Prune both phylogeny **AND** alignment:
 
-python matchfasta2tree.py -f <yourfastaalignmet> -p <yourtreefile> -t <phylogeny format: newick, nexus, nexml, phyloxml, or cdao> -u True -ot <outputtreefilet> -r True -g <outputalignment>
+<pre><code> python matchfasta2tree.py -f example.fasta -p example.tree -t newick -u True -ot out.tree -r True -g out.fasta  </code></pre>
 
 
