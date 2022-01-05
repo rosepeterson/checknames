@@ -3,6 +3,7 @@
 
 ## Check if tip labels in your phylogeny match the taxa in your fasta alignment:
 ##### phylogeny format: newick, nexus, nexml, phyloxml, or cdao
+##### alignment file must be in fasta format
 
 <pre><code> python matchfasta2tree.py -f example.fasta -p example.tree -t newick </code></pre>
 
