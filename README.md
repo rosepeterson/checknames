@@ -14,7 +14,7 @@
 ## Prune taxa from the phylogeny that are **NOT** in your alignment:
 ##### output phylogeny format will be the same as the input phylogeny format
 
-<pre><code> python matchfasta2tree.py -f example.fasta -p example.tree -t newick-u True -ot out.tree  </code></pre>
+<pre><code> python matchfasta2tree.py -f example.fasta -p example.tree -t newick -u True -ot out.tree  </code></pre>
 
 ## Prune both phylogeny **AND** alignment:
 
