@@ -10,13 +10,13 @@ from Bio import Phylo
 
 
 parser = argparse.ArgumentParser(description="Written under python 3 and requires Biopython")
-parser.add_argument('-f', '--fasta' , dest = 'fasta' , type = str , default= None , required= True, help = 'Fasta alignment to compare')
-parser.add_argument('-p', '--phylo', dest = 'phylo', type = str, default = None, required = True, help = 'phylogeny')
+parser.add_argument('-f', '--fasta' , dest = 'fasta' , type = str , default= None , required= True, help = 'Input fasta alignment')
+parser.add_argument('-p', '--phylo', dest = 'phylo', type = str, default = None, required = True, help = 'Input phylogeny')
 parser.add_argument('-t', '--filetype', dest = 'filetype', type = str, default = None, required = True, help = 'phylogeny format: newick, nexus, nexml, phyloxml, or cdao')
-parser.add_argument('-u', '--prunetree', dest = 'prunetree', type = str, default = None, required = False, help = 'True or False for pruning non-matching tips from phylogeny')
+parser.add_argument('-u', '--prunetree', dest = 'prunetree', type = str, default = None, required = False, help = 'True flag prunes non-matching tips from phylogeny')
 parser.add_argument('-ot', '--outtree', dest = 'outtree', type = str, default = None, required = False, help = 'pruned phylogeny output file')
-parser.add_argument('-r', '--prunealign', dest = 'prunealign', type = str, default = None, required = False, help = 'True or False for pruning non-matching tips from alignment')
-parser.add_argument('-g', '--outalign', dest = 'outalign', type = str, default = None, required = False, help = 'pruned alignemment file')
+parser.add_argument('-r', '--prunealign', dest = 'prunealign', type = str, default = None, required = False, help = 'True flag prunes pruning non-matching tips from alignment')
+parser.add_argument('-g', '--outalign', dest = 'outalign', type = str, default = None, required = False, help = 'output file name for pruned alignemment file')
 
 
 args, unknown = parser.parse_known_args()
