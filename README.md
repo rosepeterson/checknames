@@ -1,5 +1,5 @@
 # checknames
-##### Software required: python 3 and biopython
+##### Software required: python 3, biopython, and pandas
 
 ## Check if tip labels in a phylogeny match the headers in a fasta alignment:
 ##### Phylogeny format: newick, nexus, nexml, phyloxml, or cdao
